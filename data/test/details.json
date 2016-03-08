@@ -1,0 +1,11 @@
+{
+  "name" : "test name",
+  "title" : "title",
+  "date" : "date",
+  "author" : "author",
+  "content" : "index.html",
+  "blurb" : "short.html",
+  "tags" : [
+    "tags"
+  ]
+}

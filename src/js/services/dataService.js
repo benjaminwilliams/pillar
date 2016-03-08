@@ -25,7 +25,7 @@ app.factory('dataService', ['$http', '$q', function($http, $q) {
 
       if(id){
         var deferred = $q.defer();
-        $http.get('data/' + id + '/blog.json')
+        $http.get('data/' + id + '/details.json')
           .success(function(data) {
             deferred.resolve(data);
           }).error(function(msg, code) {
@@ -34,7 +34,6 @@ app.factory('dataService', ['$http', '$q', function($http, $q) {
         });
         return deferred.promise;
       }
-
     }
-  }
+  };
 }]);

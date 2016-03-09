@@ -1,6 +1,6 @@
 <!-- Blog posts -->
-
 <div data-ng-repeat="page in pages | orderBy:blogOrderOption:true">
-    <a data-ng-href="index.html#/page/{{page.name}}">{{page.title}}</a> {{page.dateCreated}} by {{page.author}}
+    <url-builder href="{{page.name}}" title="{{page.title}}"></url-builder>
+     {{page.dateCreated}} by {{page.author}}
     <div data-ng-include data-ng-src="'data/' + page.name + '/' + pageContent(page.content, page.blurb)"></div>
 </div>

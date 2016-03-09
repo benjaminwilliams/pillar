@@ -4,6 +4,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <base href="/pillar/">
+
     <title></title>
 
     <link rel="stylesheet" href="build/vendor.css">
@@ -30,13 +32,15 @@
     <div class="container">
     <div class="loading" ng-hide="finishedLoading"></div>
     <main>
+        <url-builder href="index" title="this is the title"></url-builder>
+
        <div data-ng-view></div>
     </main>
 
     </div>
     <div class="footer">
         <div class="container">
-            Copyright &copy; {{currentYear}} Ben Williams. All code licensed under <a href="http://opensource.org/licenses/mit-license.php">MIT</a>.
+            Copyright &copy; {{currentYear}} Ben Williams. All code released under <a href="http://opensource.org/licenses/mit-license.php">MIT</a>.
         </div>
     </div>
 </div>
